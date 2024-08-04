@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitação de Notas</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('imagens/notas.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="text-center">Digitação de Notas</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="rgm" class="form-label">RGM</label>
+                <input type="text" class="form-control" id="rgm" required>
+            </div>
+            <div class="mb-3">
+                <label for="class" class="form-label">Turma</label>
+                <input type="text" class="form-control" id="class" required>
+            </div>
+            <div class="mb-3">
+                <label for="note1" class="form-label">Nota 1</label>
+                <input type="number" class="form-control" id="note1" step="0.1" required>
+            </div>
+            <div class="mb-3">
+                <label for="note2" class="form-label">Nota 2</label>
+                <input type="number" class="form-control" id="note2" step="0.1" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Salvar</button>
+            <button type="reset" class="btn btn-secondary w-100 mt-2">Cancelar</button>
+        </form>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
